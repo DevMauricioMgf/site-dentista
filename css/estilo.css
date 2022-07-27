@@ -38,12 +38,25 @@ ul{
 
 /* Home */
  
-.head-line {
-    background-size: 200%;
+header{
     background-image: url(../img/capa.jpg);
     background-repeat: no-repeat;
-   
-    
+    background-size: cover;
+    height: 98vh;
+}
+
+.head-line{
+    position: relative;
+    padding: 10em 10em;
+}
+
+.head-line > h1{
+    color: rgb(26, 26, 146);
+}
+
+.head-line > small{
+    font-size: 1em;
+    margin-top: 3rem;
 }
 
 
