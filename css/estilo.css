@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: rgb(60, 56, 56);
+}
+
+ul li{
+    list-style: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    background: linear-gradient(white, rgba(230, 224, 224, 0.8));
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 2em;
+}
+
+/* Home */
+ 
+.head-line {
+    background-size: 200%;
+    background-image: url(../img/capa.jpg);
+    background-repeat: no-repeat;
+   
+    
+}
+
+
+/* Sobre */
+
+
+
+/* Serviços */
+
+
+
+/* Contato */
+
