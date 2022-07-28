@@ -3,8 +3,40 @@
     margin: 0;
     padding: 0;
     border: 0;
+    outline: 0;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
+
+:root{
+    --color-bg: black;
+    --color-bg-variant: rgb(9, 9, 58);
+    --color-primary: rgb(221, 217, 241);
+    --color-primary-variant: rgb(108, 108, 206);
+    --color-white: white;
+    --color-light: rgba(255, 255, 255, 0.6);
+
+    --transition: all 400ms ease;
+
+    --container-width-lg: 75%;
+    --container-width-mg: 86%;
+    --container-width-sm: 90%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.container{
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+
 
 body{
     font-family: 'Poppins', sans-serif;
@@ -51,17 +83,71 @@ header{
 }
 
 .head-line > h1{
-    color: rgb(26, 26, 146);
+    color: rgb(26, 129, 177);
 }
 
 .head-line > small{
     font-size: 1em;
     margin-top: 3rem;
+    color: rgba(0, 0, 0, 0.623);
 }
 
 
 /* Sobre */
 
+#sobre{
+    text-align: center;
+    padding: 100px 0;
+    background: rgb(233, 233, 233);
+}
+
+#sobre > h1{
+    font-weight: 500;
+    font-size: 2em;
+}
+
+#sobre > p{
+    color: rgba(0, 0, 0, 0.623);
+    padding: 20px 0;
+    font-size: 0.85em;
+}
+
+
+.azul{
+    color: rgb(26, 129, 177);
+}
+
+.especialidades___content{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2rem;
+    width: 80vw;
+    margin: 5rem;
+}
+
+.especialidade__detalhes{
+    border: 1px solid transparent;
+    transition: var(--transition);
+    width: 25vw;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.especialidade__detalhes:hover{
+    border: 1px solid  rgb(26, 129, 177);
+}
+
+.especialidade__detalhes > h2{
+    color: rgba(0, 0, 0, 0.801);
+}
+
+.especialidade__detalhes > h2:hover{
+    color: rgb(26, 129, 177);
+}
+
+.especialidade__detalhes > small{
+    color: rgba(0, 0, 0, 0.623);
+}
 
 
 /* Serviços */
