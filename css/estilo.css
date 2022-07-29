@@ -143,7 +143,7 @@ article.especialidade__detalhes{
     font-size: 1rem;
 }
 
-.especialidade__detalhes h2:hover{
+.especialidade__detalhes:hover h2{
     color: rgb(26, 129, 177);
 }
 
@@ -165,7 +165,23 @@ article.especialidade__detalhes{
 
 .circulo:hover{
     border-color: rgb(26, 129, 177);
-    background-color: white;
+    background-color:  rgba(26, 129, 177, 0.733);
+}
+
+.imagem img{
+    position: relative;
+    top: 1.2rem;
+    width: 40px;
+    height: 40px;
+    transition: var(--transition);
+}
+
+
+.especialidade__detalhes:hover .imagem img{
+    position: relative;
+    top: 1rem;
+    width: 50px;
+    height: 50px;
 }
 
 /* =========== MEDIA QUERRY (MEDIUM DEVICES) ====================== */
@@ -203,6 +219,21 @@ article.especialidade__detalhes{
         width: 80vw;
         background: white;
         
+    }
+
+    .head-line{
+        position: relative;
+        padding: 6em 3em;
+    }
+    
+    .head-line > h1{
+        color: rgb(26, 129, 177);
+    }
+    
+    .head-line > small{
+        font-size: 1em;
+        margin-top: 3rem;
+        color: rgba(0, 0, 0, 0.623);
     }
 }
 
