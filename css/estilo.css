@@ -44,7 +44,8 @@ a{
 }
 
 a:hover{
-    color: rgb(60, 56, 56);
+    color: rgb(0, 94, 255);
+    transition: var(--transition);
 }
 
 ul li{
@@ -54,6 +55,7 @@ ul li{
 nav{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     padding: 1em;
     background: linear-gradient(white, rgba(230, 224, 224, 0.8));
 }
@@ -62,6 +64,7 @@ ul{
     display: flex;
     justify-content: space-around;
     gap: 2em;
+    font-weight: 500;
 }
 
 /* Home */
@@ -239,6 +242,25 @@ article.especialidade__detalhes{
 
 
 /* Serviços */
+
+.container__preto{
+    background-color: rgb(50, 50, 50);
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    align-items: center;
+    height: 30vh;
+}
+
+.conteudo__servicos > h2{
+    color: lightblue;
+    font-size:3rem
+}
+
+.conteudo__servicos > h3{
+    color: white;
+}
 
 
 
