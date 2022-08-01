@@ -185,6 +185,7 @@ article.especialidade__detalhes{
     top: 1rem;
     width: 50px;
     height: 50px;
+    filter: blur(0.5px);
 }
 
 /* =========== MEDIA QUERRY (MEDIUM DEVICES) ====================== */
@@ -262,9 +263,77 @@ article.especialidade__detalhes{
     color: white;
 }
 
+#clinica{
+    display: flex;
+}
 
 
 
+.img__left img {
+    width: 50vw;
+    height: 120vh;
+    margin: 0;
+}
+
+.content__right{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.content__clinica{
+    width: 25vw;
+    text-align: center;
+    padding: 0 2rem;
+    
+}
+
+.content__clinica > h2{
+    padding-top: 2rem;
+    font-size: 1.4rem;
+    color: rgba(10, 10, 10, 0.811);
+    width:15vw;
+    text-align: center;
+    margin: auto;
+    
+}
+
+.content__clinica > p{
+    color: rgba(0, 0, 0, 0.623);
+    padding: 20px 0;
+    font-size: 0.85em;
+}
+
+.content__clinica:hover h2{
+    color: rgb(26, 129, 177);
+}
 
 /* Contato */
+
+#contato{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    color: white;
+}
+
+.contato__black{
+    background-color: rgba(0, 0, 0, 0.623);
+}
+
+.contato__black img{
+    width: 40%;
+}
+
+.contato__escuro{
+    background-color: rgb(1, 1, 245);
+}
+
+.contato__azul{
+    background-color: rgb(0, 85, 255);
+}
+
+.contato__claro{
+    background-color: rgb(0, 149, 255);
+}
 
