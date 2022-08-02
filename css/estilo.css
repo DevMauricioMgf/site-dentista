@@ -41,7 +41,7 @@ a{
 }
 
 a:hover{
-    color: rgb(0, 94, 255);
+    color: rgb(36, 190, 237);
     transition: var(--transition);
 }
 
@@ -315,7 +315,7 @@ article.especialidade__detalhes{
     margin: auto;
 }
 
-.content__clinica > p{
+.content__clinica p{
     color: rgba(0, 0, 0, 0.623);
     padding: 20px 0;
     font-size: 0.85em;
@@ -371,19 +371,37 @@ article.especialidade__detalhes{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     color: white;
+    height: 70vh;
+    text-align: center;
 }
 
 .container__contato > h2{
     text-transform: uppercase;
     font-weight: 300;
+    padding-top:10rem;
+}
+
+.container__contato p{
+    color: white;
+    padding: 20px 0;
+    font-size: 0.85em;
 }
 
 .contato__black{
-    background-color: rgba(0, 0, 0, 0.623);
+    background-color: rgba(0, 0, 0, 0.735);
+    padding: 2rem;
+}
+
+.contato__black > p{
+    color: rgba(185, 243, 252, 0.693);
+    text-align: justify;
 }
 
 .contato__black img{
-    width: 40%;
+    clear: both;
+    width: 50%;
+    padding: 2rem;
+    text-align: center;
 }
 
 .contato__escuro{
@@ -420,7 +438,41 @@ article.especialidade__detalhes{
 /* MAPA */
 iframe{
     width: 100vw;
+    vertical-align: bottom;
 }
 
 
 /* RODAPÉ */
+
+footer{
+    background-color: rgba(0, 0, 0, 0.802);
+    color: white;
+    padding: 3rem;
+    display: flex;
+}
+
+footer p {
+    font-size:0.8rem;
+    font-weight:300;
+    color: rgba(255, 255, 255, 0.64);
+}
+
+footer ul{
+    font-size:0.8rem;
+    font-weight:300;
+    color: rgba(255, 255, 255, 0.64);
+    justify-content: space-around;
+    gap: 2em;
+    padding-left: 10rem;
+}
+
+
+footer a{
+    color: rgba(255, 255, 255, 0.64);
+}
+
+.media{
+    padding-left: 10rem;
+    position: end;
+    font-size: 1rem;
+}
