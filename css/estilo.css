@@ -244,6 +244,8 @@ article.especialidade__detalhes{
 
 /* Serviços */
 
+/* Container preto */
+
 .container__preto{
     background-color: rgb(50, 50, 50);
     color: white;
@@ -263,6 +265,24 @@ article.especialidade__detalhes{
     color: white;
 }
 
+/* =========== MEDIA QUERRY (MEDIUM DEVICES) ====================== */
+@media screen and (max-width: 1024px) {
+    .container__preto{
+        grid-template-columns: 1fr 1fr;
+      }
+}
+
+/* =========== MEDIA QUERRY (SMALL DEVICES) ====================== */
+@media screen and (max-width: 600px) {
+      .container__preto{
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        height: 100vh;
+      }
+}
+
+/* Fim container preto */
+
 #clinica{
     display: flex;
 }
@@ -272,8 +292,9 @@ article.especialidade__detalhes{
 .img__left img {
     width: 50vw;
     height: 120vh;
-    margin: 0;
+    vertical-align: bottom; /* MUITO IMPORTANTE */
 }
+
 
 .content__right{
     display: grid;
@@ -307,6 +328,24 @@ article.especialidade__detalhes{
 .content__clinica:hover h2{
     color: rgb(26, 129, 177);
 }
+
+/* =========== MEDIA QUERRY (MEDIUM DEVICES) ====================== */
+@media screen and (max-width: 1024px) {
+    #clinica{
+        display: block;
+    }
+    .img__left img {
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+/* =========== MEDIA QUERRY (SMALL DEVICES) ====================== */
+@media screen and (max-width: 600px) {
+      
+}
+
+
 
 /* Contato */
 
