@@ -22,6 +22,7 @@
 
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
 
@@ -290,17 +291,18 @@ article.especialidade__detalhes{
     width: 50vw;
     height: 120vh;
     vertical-align: bottom; /* MUITO IMPORTANTE */
+    margin: 0;
 }
 
 
-.content__right{
+.content__right{    
+    width: 50vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
 
 .content__clinica{
-    width: 25vw;
     text-align: center;
     padding: 0 2rem;
     
@@ -310,7 +312,7 @@ article.especialidade__detalhes{
     padding-top: 2rem;
     font-size: 1.4rem;
     color: rgba(10, 10, 10, 0.811);
-    width:15vw;
+    width:14vw;
     text-align: center;
     margin: auto;
 }
@@ -448,10 +450,14 @@ footer{
     background-color: rgba(0, 0, 0, 0.802);
     color: white;
     padding: 3rem;
-    display: flex;
+    display: flex;                  /* establish flex container */
+    flex-direction: row;            /* default value; can be omitted */
+    flex-wrap: nowrap;              /* default value; can be omitted */
+    justify-content: space-around; /* switched from default (flex-start, see below) */
 }
 
-footer p {
+footer .copy {
+    justify-content: flex-start;
     font-size:0.8rem;
     font-weight:300;
     color: rgba(255, 255, 255, 0.64);
@@ -461,9 +467,7 @@ footer ul{
     font-size:0.8rem;
     font-weight:300;
     color: rgba(255, 255, 255, 0.64);
-    justify-content: space-around;
-    gap: 2em;
-    padding-left: 10rem;
+    justify-content: center;
 }
 
 
@@ -472,7 +476,7 @@ footer a{
 }
 
 .media{
-    padding-left: 10rem;
+    justify-content: flex-end;
     position: end;
     font-size: 1rem;
 }
